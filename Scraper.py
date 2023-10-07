@@ -4,8 +4,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 import time
 
 
-
+#Explicitly stating the number of pages we have allows to write easier code since we can elude
+#the many drawbacks from the bot detector
 for i in range(1,597):
+    #Here Firefox is excecuting locally so there's no need to state the location of it
     driver=webdriver.Firefox()
     url="https://www.inmuebles24.com/departamentos-en-renta-en-ciudad-de-mexico"
     output_name=""'Downloads\inmuebles24-sep-2023\list_of_apartments'
